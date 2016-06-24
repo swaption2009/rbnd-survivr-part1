@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
   s.description = "Colorizr is a cool and fun gem"
   s.authors     = ["Ultra Performer"]
   s.email       = 'ultraperformer@example.com'
-  s.files       = "lib/coloriz.rb"
+  s.files       = ["lib/colorizr.rb"]
   s.homepage    = 'https://github.com/swaption2009/rbnd-survivr-part1'
 end
