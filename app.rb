@@ -1,5 +1,4 @@
-#require 'colorizr'
-require_relative 'string'
+require './lib/colorizr'
 
 john = String.new('red')
 john.color?
