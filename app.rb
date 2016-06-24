@@ -1,7 +1,8 @@
 #require 'colorizr'
 require_relative 'string'
 
-name = String.new('red')
+john = String.new('red')
+john.color?
 String.colors
 String.sample_colors
 

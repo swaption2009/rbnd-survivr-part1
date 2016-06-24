@@ -16,11 +16,18 @@ class String
     @color = color
   end
 
+  def color?
+    puts @color
+  end
+
   def self.colors
     @@colors.each { |k, v| puts k }
   end
 
-    def self.sample_colors
+  def self.sample_colors
     @@colors.each { |k, v| puts "This is " + "\e[" + v.to_s + "m" + k.to_s + " text\e[0m" } # `\e[ 34mSTUFF GOES IN HERE \e[0m`
+  end
+
+  def create_color
   end
 end
