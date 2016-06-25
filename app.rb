@@ -1,4 +1,5 @@
-require './lib/colorizr'
+require 'colorizr'
+#require_relative './lib/colorizr'
 
 String.colors
 String.sample_colors

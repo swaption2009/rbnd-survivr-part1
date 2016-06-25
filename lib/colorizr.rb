@@ -25,7 +25,8 @@ class String
   end
 
   def self.sample_colors
-    @@colors.each { |k, v| puts "This is " + "\e[" + v.to_s + "m" + k.to_s + " text\e[0m" }
+    create_color
+    @@colors.each { |color, code| puts "This is #{color} text".send(color) }
   end
 
   def self.create_color
