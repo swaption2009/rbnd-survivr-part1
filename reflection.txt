@@ -1,0 +1,8 @@
+1) How does your gem take advantage of Ruby’s metaprogramming capabilities?
+- Metaprogramming helps to speed up writing code and make it more organized by eliminating repetitive tasks.
+2) How long did you spend working on this project? 6 hours
+3) What was the most rewarding challenge you conquered?
+- build my first ruby gem
+- understand and able to code ruby metaprogramming
+4) Where do you still have room to grow?
+- apply metaprogramming in my codes as much as possible
