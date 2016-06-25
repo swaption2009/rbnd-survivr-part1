@@ -2,9 +2,14 @@
 Colorizr is a Ruby gem that add string with color.
 
 ## Installation
-`$ gem install colorizr-0.1.0.gem`
+`$ gem install colorizr-0.0.1.gem`
 
 ## Usage
+To change the color of your String, simply add color name after the string.
+```
+puts "John".red
+=> will print "John" in red color
+```
 Sample usage:
 ```
 $ john = String.new(red)

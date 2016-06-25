@@ -1,5 +1,5 @@
 class String
-  attr_reader :color
+  attr_accessor :color
 
   @@colors = {
     'red' => 31,
@@ -25,9 +25,17 @@ class String
   end
 
   def self.sample_colors
-    @@colors.each { |k, v| puts "This is " + "\e[" + v.to_s + "m" + k.to_s + " text\e[0m" } # `\e[ 34mSTUFF GOES IN HERE \e[0m`
+    @@colors.each { |k, v| puts "This is " + "\e[" + v.to_s + "m" + k.to_s + " text\e[0m" }
   end
 
-  def create_color
+  def self.create_color
+    @@colors.each do |color, code|
+      class_eval("def #{color}; \"\e[ #{code}m\#{self}\e[0m\"; end")
+    end
   end
+
+  def method_missing(method_name, *arguments)
+    print "No method named #{method_name}"
+  end
+
 end
